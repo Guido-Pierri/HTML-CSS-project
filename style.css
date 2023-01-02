@@ -120,8 +120,14 @@ nav a {
 
 #rum {
     display: flex;
+    position: relative;
+    flex-direction: row;
+    color: #A55C31;
 }
-
+#rum h2 {
+    position: absolute;
+    text-align: center;
+}
 #bild1 {
     width: 50%;
 }
