@@ -5,7 +5,7 @@
     padding: 0;
     font-family: 'Josefin Sans',
         sans-serif, Arial, Helvetica, sans-serif;
-    color: #fff;
+    color: #1b1b1b;
     /* background-color: #131B42; */
 }
 
@@ -16,11 +16,14 @@ body {
     flex-direction: column;
 }
 
-section {
-    display: flex;
-    width: 100%;
+h1 {
+    font-size: 3em;
+    color: #A55C31;
 }
-
+h2 {
+    font-size: 2em;
+    color: #A55C31;
+}
 #icon {
     /* max-width: 240px;
     max-height: 240px;
@@ -176,10 +179,6 @@ nav a {
 
 }
 
-/* img {
-    max-width: 100%;
-    width: 100%; 
-}*/
 
 footer {
     background-color: #003D31;
@@ -203,25 +202,33 @@ main {
 .hero {
     position: relative;
     display: flex;
+    width: 100%;
     flex-direction: column;
     background-color: #003D31;
     /* text-align: center; */
     align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    background-color: #003D31;
+    /* text-align: center; */
+    /* align-items: center; */
     width: 100%;
 }
-.content {
-    position: relative;
-    display: flex;
+.contentHomePage {
     flex-direction: column;
     background-color: #003D31;
     /* text-align: center; */
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
+    padding-top: 10px;
 }
 .titel {
     color: rgb(230, 230, 230);
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 5%;
     font-size: 4em;
 }
@@ -244,13 +251,15 @@ main {
 
 .rum {
     display: flex;
+    flex-direction: column;
+    justify-items: center;
     /* flex-direction: row; */
     /* width: 100%; */
     margin-top: 5%;
     /* width: 100%; */
     /* min-height: 100vh; */
     /* max-width: 100%; */
-    max-width: 700px;
+    /* max-width: 700px; */
     /* justify-content: center; */
 }
 
@@ -279,21 +288,88 @@ main {
     text-align: left;
     font-size: .9em;
 
+
+}
+
+.textContainer p {
+    color: #A55C31;
+}
+
+.textContainer ul li {
+    margin-left: 10px;
+    color: #A55C31;
+}
+
+/*
+CSS för kontakt.htm
+*/
+.form {
+    width: 50%;
+}
+form {
+    color: #1b1b1b;
+    background-color: #ffffff;
+    /* border-color:#1b1b1b; */
+    border-radius: 5px;
+    /* width: 50%; */
+    padding-top: 10px;
+    font-size: 2em;
+}
+
+fieldset {
+    /* border-color:#1b1b1b; */
+    border-width: 0px;
+    color: #1b1b1b;
+    padding: 10px;
+}
+
+legend {
+    color: #1b1b1b;
+
+}
+
+label {
+    padding: 5px;
+    color: #1b1b1b;
+}
+
+input {
+    background-color: #ffffff;
+    /* border-color: #A55C31; */
+}
+
+select {
+    /* width: 100%; */
+    padding: 16px 20px;
+    border-color: #1b1b1b;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #1b1b1b;
+}
+
+textarea {
+    background-color: #ffffff;
+    border-color: #1b1b1b;
 }
 
 /* Media Query för skärmar mindre än 750 px bredd */
 @media screen and (max-width: 750px) {
-.hero {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #003D31;
-    /* text-align: center; */
-    align-items: center;
-    width: 100%;
-}
-    .titel {
-        color: rgb(230, 230, 230);
+    * {
+        font-size: 90%;
+    }
+
+    .hero {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #003D31;
+        /* text-align: center; */
+        align-items: center;
+        width: 100%;
+    }
+
+    .titel h1 {
+        color: rgb(7, 7, 7);
         position: absolute;
         top: 02%;
         /* align-self: center; */

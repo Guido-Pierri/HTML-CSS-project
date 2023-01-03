@@ -1,5 +1,17 @@
+<!--
+TODO
+Kontaktsida:
+i. Kontaktuppgifter i form av adress, telefon och e-post till hotellet
+ii. Kontaktformulär med minst följande fält:
+1. Namn
+2. E-post
+3. Telefonnummer
+4. Rullist för val av ämne (t.ex. Bokning, avbokning, övrigt)
+5. Meddelanderuta
+6. Skicka-knapp
+-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -20,7 +32,46 @@
             <a href="kontakt.htm">Kontakta oss</a>
         </nav>
     </div>
-    <h1>Kontaktformulär</h1>
+    <main>
+        <section class="hero">
+            <h1>Kontakta hotellet
+            </h1>
+        </section>
+        <section class="content">
+            <section class="form">
+                <form action="">
+                    <fieldset>
+                        <legend>Dina uppgifter</legend>
+                        <label for="name">Förnamn</label><br>
+                        <input type="text" name="name" id="name"><br><br>
+                        <label for="lastName">Efternamn</label><br>
+                        <input type="text" name="lastName" id="lastName"><br><br>
+                        <label for="email">E-post</label><br>
+                        <input type="email" name="email" id="email"><br><br>
+                        <label for="telephone">Telefonnummer</label><br>
+                        <input type="tel" name="telephone" id="telephone"><br><br>
+                        <select name="subject" id="subject">
+                            <option value="" disabled selected>Välje ett ämne</option>
+                            <option value="book">Bokning</option>
+                            <option value="unbook">Avokning</option>
+                            <option value="Övrigt">Övrigt</option>
+                        </select><br><br>
+                        <label for="message">Skriv ett meddelande</label><br>
+                        <textarea name="message" id="" cols="30" rows="10"></textarea><br>
+                        <input type="submit" value="Skicka">
+                    </fieldset>
+                </form>
+            </section>
+            <section class="info">
+                
+                <h3>Ring oss
+                Helagsfjällhotellets telefonväxel: 010-808 97 20</h3>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <h4>© 2022 Helagsdalens Fjällhotel</h4>
+    </footer>
 </body>
 
 </html>

@@ -8,9 +8,28 @@
     <link rel="stylesheet" href="style.css">
     <title>Helagsdalens Fjällhotel</title>
 </head>
+<!--
+    TODO
+    * Minst en huvudrubrik, en bild och ett eller fler utvalda hotellrum ska visas på
+        startsidan
+    • Alla tre sidor finns med på webbplatsen samt likadan huvudmeny och sidfot på alla sidor
+    • En enkel designskiss som visar t.ex. tänkta färger och design skapas för webbplatsen (det
+        räcker med designskiss för en sida).
+    • Enkla wireframes skapas för alla 3 sidor (välj om ni vill göra för desktop/mobil eller blandat).
+    • Webbplatsen ska ha en genomgående grafisk design på alla sidor.
+    • Webbplatsen ska vara responsiv och fungera för olika skärmstorlekar.
+    • Huvudmenyn ska i mobilstorlek visas genom klick på en knapp.
+    • HTML, CSS och Javacript-kod ska skrivas i separata filer.
+    • HTML- och CSS-kod ska validera korrekt (utan fel, varningar är okej).
+    • Webbplatsen ska vara tillgänglighetsanpassad, minst 5 olika WCAG-krav (nivå A och/eller
+        AA) ska uppfyllas för att förbättra tillgängligheten.
+    • Webbplatsen ska versionshanteras med hjälp av Git/Github och källkoden finnas på ett
+        remote repository.
+    • Webbplatsen ska slutligen publiceras på webben, t.ex. med hjälp av Github Pages.
 
+-->
 <body>
-    <article>
+    <section>
         <header id="heading">
             <div id="icon">
                 <a href="index.htm"><img src="bilder/iconmonstr-bed-3-240(1).png" alt="Icon of a bed"></a>
@@ -21,18 +40,20 @@
                 <a href="kontakt.htm">Kontakta oss</a>
             </nav>
         </header>
-    </article>
-    <main>
-    <article>
-    <section id="heroSection">
-        <h1>Välkommen till Helagsdalens Fjällhotel </h1>
-        <img src="bilder/pexels-luizamaria-scurtu-1977342(1)_smallest.jpg" alt="">
-
-        <!-- <div id="underrubrik">
-            <button type="button"><h2>Boka din vistelse här</h2></button>
-        </div> -->
+       
     </section>
-    </article>
+    <main>
+    <section class="hero">
+        <img class="hero" src="bilder/pexels-luizamaria-scurtu-1977342(1)_smallest.jpg" alt="">
+        <h1 class="titel">Välkommen till Helagsdalens Fjällhotel </h1>
+        <br>
+    </section>
+    <section class="content">
+        <article >
+            
+            <h2 class="contentHomePage">Ett hotell för hela familjen, mitt i fjällvärlden</h2>
+        </article>
+    </section>
     <div id="wrapper">
         <section id="container">
             <!-- <h2>Våra rum</h2> -->
