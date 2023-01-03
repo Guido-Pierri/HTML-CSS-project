@@ -18,11 +18,11 @@ body {
 
 h1 {
     font-size: 3em;
-    color: #A55C31;
+    color: #E06A3F;
 }
 h2 {
     font-size: 2em;
-    color: #A55C31;
+    color: #E06A3F;
 }
 video {
     width: 100%;
@@ -109,7 +109,7 @@ nav a {
 }
 
 #underrubrik {
-    color: #FFA97E;
+    color: #E06A3F;
     display: flex;
     justify-content: center;
 
@@ -119,7 +119,7 @@ nav a {
 }
 
 #heroSection h2 {
-    color: #FFA97E;
+    color: #E06A3F;
     position: absolute;
     display: flex;
     justify-content: left;
@@ -134,7 +134,7 @@ nav a {
 #container {
     display: flex;
     background-color: #003D31;
-    color: #A55C31;
+    color: #E06A3F;
     justify-content: center;
     width: 100%;
     height: 60px;
@@ -142,7 +142,7 @@ nav a {
 
 #container h2 {
     display: flex;
-    color: #A55C31;
+    color: #E06A3F;
     /* font-size: 3em; */
 }
 
@@ -160,7 +160,7 @@ nav a {
 #rum h2 {
     position: absolute;
     text-align: center;
-    color: #A55C31;
+    color: #E06A3F;
 }
 
 .bild1 {
@@ -193,7 +193,7 @@ footer {
 }
 
 footer h4 {
-    color: #A55C31;
+    color: #E06A3F;
 }
 
 main {
@@ -238,7 +238,7 @@ main {
 }
 
 .titel2 {
-    color: #A55C31;
+    color: #E06A3F;
     /* position: absolute; */
     font-size: 1.5em;
 }
@@ -296,12 +296,12 @@ main {
 }
 
 .textContainer p {
-    color: #A55C31;
+    color: #E06A3F;
 }
 
 .textContainer ul li {
     margin-left: 10px;
-    color: #A55C31;
+    color: #E06A3F;
 }
 
 /*
