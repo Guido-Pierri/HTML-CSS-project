@@ -10,6 +10,7 @@
 }
 
 body {
+    font-size: 100%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -20,13 +21,30 @@ h1 {
     font-size: 3em;
     color: #E06A3F;
 }
+
 h2 {
     font-size: 2em;
     color: #E06A3F;
 }
+
+h3 {
+    font-size: 2em;
+    color: #E06A3F;
+}
+
+h4 {
+    font-size: 1.7em;
+    color: #E06A3F;
+}
+
+p {
+    font-size: 1em;
+}
+
 video {
     width: 100%;
 }
+
 #icon {
     /* max-width: 240px;
     max-height: 240px;
@@ -39,7 +57,9 @@ video {
 }
 
 #icon img {
-    height: 60px;
+    height: 50px;
+    padding: 5px;
+    background-color: #003D31;
 }
 
 /* #icon a {
@@ -199,7 +219,8 @@ footer h4 {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background-color: #003D31;
 }
 
 .hero {
@@ -208,35 +229,48 @@ main {
     width: 100%;
     flex-direction: column;
     background-color: #003D31;
-    /* text-align: center; */
+    align-content: center;
     align-items: center;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* text-align: left; */
+    /* max-width: 750px; */
 }
 
 .content {
     display: flex;
-    flex-direction: row;
-    background-color: #003D31;
-    /* text-align: center; */
-    /* align-items: center; */
-    width: 100%;
-}
-.contentHomePage {
     flex-direction: column;
     background-color: #003D31;
-    /* text-align: center; */
+    text-align: left;
     /* align-items: center; */
     width: 100%;
-    padding-top: 10px;
+    max-width: 750px;
+    /* align-items: center; */
+    /* align-content: center; */
 }
+
+.content h2 {
+display: flex;
+}
+
+
+
 .titel {
     color: #e6e6e6;
     color: #E06A3F;
     position: absolute;
     top: 5%;
-    /* left: 5%; */
+    align-content: center;
     font-size: 4em;
 }
-
+.titelStartsida {
+    color: #e6e6e6;
+    color: #E06A3F;
+    position: absolute;
+    top: 10%;
+    align-content: center;
+    font-size: 4em;
+}
 .titel2 {
     color: #E06A3F;
     /* position: absolute; */
@@ -246,10 +280,7 @@ main {
 .container {
     width: 100%;
     display: flex;
-    /* flex-wrap: wrap; */
     flex-flow: row;
-    font-size: 1em;
-    /* align-items: center; */
 
 }
 
@@ -303,16 +334,22 @@ main {
     margin-left: 10px;
     color: #E06A3F;
 }
-
+/* .prisContainer {
+    display: flex;
+    justify-content: center;
+} */
 /*
 CSS för kontakt.htm
 */
 .form {
-    width: 50%;
+    /* width: 50%; */
+    background-color: #003D31;
+    color: #E06A3F;
 }
+
 form {
-    color: #1b1b1b;
-    background-color: #ffffff;
+    color: #E06A3F;
+    /* background-color: #ffffff; */
     /* border-color:#1b1b1b; */
     border-radius: 5px;
     /* width: 50%; */
@@ -323,23 +360,33 @@ form {
 fieldset {
     /* border-color:#1b1b1b; */
     border-width: 0px;
-    color: #1b1b1b;
-    padding: 10px;
+    color: #E06A3F;
+    /* padding: 10px; */
 }
 
 legend {
-    color: #1b1b1b;
+    color: #E06A3F;
 
 }
 
 label {
-    padding: 5px;
-    color: #1b1b1b;
+    /* padding: 5px; */
+    color: #E06A3F;
 }
 
 input {
     background-color: #ffffff;
+    width: 100%;
+    font-size: 1em;
     /* border-color: #A55C31; */
+}
+
+input[ type="submit"] {
+    
+    width: 25%;
+    background-color: #b6b6b6;
+    cursor: pointer;
+
 }
 
 select {
@@ -348,12 +395,14 @@ select {
     border-color: #1b1b1b;
     border-radius: 4px;
     background-color: #ffffff;
-    color: #1b1b1b;
+    font-size: 1em;
+    /* color: #1b1b1b; */
 }
 
 textarea {
     background-color: #ffffff;
     border-color: #1b1b1b;
+    width: 100%;
 }
 
 /* Media Query för skärmar mindre än 750 px bredd */
