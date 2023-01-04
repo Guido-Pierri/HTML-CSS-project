@@ -66,22 +66,15 @@ video {
     justify-content: space-around;
 }
 
-.hidden {
+img.hidden {
     display: none;
-
 }
-
+.menyKnapp {
+    display: none;
+}
 .visible {
     display: flex;
 }
-
-div.menyIkon {
-    display: flex;
-    width: 50px;
-    height: 50px;
-    justify-self: flex-end;
-}
-
 #icon div {
     display: flex;
     height: 60px;
@@ -439,6 +432,7 @@ textarea {
     }
 
     .menyKnapp {
+        display: flex;
         width: 50px;
         align-items: center;
         padding-right: 10px;
@@ -450,7 +444,7 @@ textarea {
     }
 
     .hidden {
-        display: flex;
+        display: none;
     }
 
     .visible {
