@@ -23,21 +23,22 @@ h1 {
 }
 
 h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     color: #E06A3F;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.3em;
     color: #E06A3F;
 }
 
 h4 {
-    font-size: 1.7em;
+    font-size: 1.1em;
     color: #E06A3F;
 }
 
 p {
+    color: #E06A3F;
     font-size: 1em;
 }
 
@@ -174,6 +175,12 @@ nav a {
     display: flex;
     position: relative;
     flex-direction: row;
+    width: 100%;
+    max-width: 750px;
+    justify-content: space-around;
+    margin-top: 5%;
+    /* justify-items: center; */
+
 
 }
 
@@ -183,13 +190,13 @@ nav a {
     color: #E06A3F;
 }
 
-.bild1 {
-    width: 50%;
+.bild  {
+    width: 25%;
     position: relative;
 }
 
 .bild2 {
-    width: 50%;
+    /* width: 50%; */
     position: relative;
 }
 
@@ -250,7 +257,7 @@ main {
 }
 
 .content h2 {
-display: flex;
+    display: flex;
 }
 
 
@@ -263,6 +270,7 @@ display: flex;
     align-content: center;
     font-size: 4em;
 }
+
 .titelStartsida {
     color: #e6e6e6;
     color: #E06A3F;
@@ -271,6 +279,7 @@ display: flex;
     align-content: center;
     font-size: 4em;
 }
+
 .titel2 {
     color: #E06A3F;
     /* position: absolute; */
@@ -334,6 +343,7 @@ display: flex;
     margin-left: 10px;
     color: #E06A3F;
 }
+
 /* .prisContainer {
     display: flex;
     justify-content: center;
@@ -354,7 +364,7 @@ form {
     border-radius: 5px;
     /* width: 50%; */
     padding-top: 10px;
-    font-size: 2em;
+    font-size: 1.2em;
 }
 
 fieldset {
@@ -382,7 +392,7 @@ input {
 }
 
 input[ type="submit"] {
-    
+
     width: 25%;
     background-color: #b6b6b6;
     cursor: pointer;
@@ -391,7 +401,7 @@ input[ type="submit"] {
 
 select {
     /* width: 100%; */
-    padding: 16px 20px;
+    padding: 10px 10px;
     border-color: #1b1b1b;
     border-radius: 4px;
     background-color: #ffffff;
@@ -408,9 +418,14 @@ textarea {
 /* Media Query för skärmar mindre än 750 px bredd */
 @media screen and (max-width: 750px) {
     * {
-        font-size: 90%;
+        /* font-size: 95%; */
     }
-
+.info {
+    padding: 1%;
+}
+.form {
+    padding: 1%;
+}
     .hero {
         position: relative;
         display: flex;
@@ -430,7 +445,9 @@ textarea {
         justify-content: center;
         font-size: 3em;
     }
-
+.content {
+    width: 100%;
+}
     .container {
         width: 100%;
         display: flex;
@@ -439,7 +456,17 @@ textarea {
         font-size: 1em;
         align-items: center;
     }
+.wrapper {
+    display: flex;
+    position: relative;
+    /* flex-direction: column; */
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5%;
+    /* justify-items: center; */
 
+
+}
     .rum {
         display: flex;
         /* flex-direction: row; */
