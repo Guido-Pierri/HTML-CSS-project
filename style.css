@@ -46,29 +46,40 @@ video {
     width: 100%;
 }
 
-#icon {
+.icon img {
     /* max-width: 240px;
     max-height: 240px;
     flex-direction: row; */
-    width: 60px;
-    height: 60px;
-    margin: 0;
-    padding: 0;
-    /* display: flex; */
-}
-
-#icon img {
+    width: 50px;
     height: 50px;
     padding: 5px;
     background-color: #003D31;
 }
 
-/* #icon a {
+.icon a {
     width: 60px;
     height: 60px;
-} */
-#meny {
+}
+
+.meny {
     display: flex;
+    justify-content: space-around;
+}
+
+.hidden {
+    display: none;
+
+}
+
+.visible {
+    display: flex;
+}
+
+div.menyIkon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-self: flex-end;
 }
 
 #icon div {
@@ -88,11 +99,10 @@ video {
 /* div {
     display: flex;
 } */
-
 nav {
     display: flex;
-    justify-content: space-evenly;
-    justify-content: center;
+    justify-content: space-between;
+    /* justify-content: flex-end; */
     align-items: center;
     /* padding: 10px; */
     background-color: #003D31;
@@ -106,6 +116,12 @@ nav a {
     /* font-weight: bold; */
     padding: 10px;
     text-decoration: none;
+}
+
+.navBar {
+    display: flex;
+    /* justify-self: flex-start; */
+    order: -1;
 }
 
 #heroSection {
@@ -190,7 +206,7 @@ nav a {
     color: #E06A3F;
 }
 
-.bild  {
+.bild {
     width: 25%;
     position: relative;
 }
@@ -236,7 +252,6 @@ main {
     width: 100%;
     flex-direction: column;
     background-color: #003D31;
-    align-content: center;
     align-items: center;
     /* text-align: center; */
     /* align-items: center; */
@@ -417,15 +432,39 @@ textarea {
 
 /* Media Query för skärmar mindre än 750 px bredd */
 @media screen and (max-width: 750px) {
-    * {
-        /* font-size: 95%; */
+
+    .navBar {
+        display: none;
+        font-size: 60%;
     }
-.info {
-    padding: 1%;
-}
-.form {
-    padding: 1%;
-}
+
+    .menyKnapp {
+        width: 50px;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .hidden {
+        display: flex;
+    }
+
+    .visible {
+        display: flex;
+    }
+
+    .info {
+        padding: 1%;
+    }
+
+    .form {
+        padding: 1%;
+    }
+
     .hero {
         position: relative;
         display: flex;
@@ -434,20 +473,17 @@ textarea {
         /* text-align: center; */
         align-items: center;
         width: 100%;
+        overflow: hidden;
     }
 
-    .titel h1 {
-        color: rgb(7, 7, 7);
-        position: absolute;
-        top: 02%;
-        /* align-self: center; */
-        left: 5%;
-        justify-content: center;
+    .hero h1 {
         font-size: 3em;
     }
-.content {
-    width: 100%;
-}
+
+    .content {
+        width: 100%;
+    }
+
     .container {
         width: 100%;
         display: flex;
@@ -456,27 +492,22 @@ textarea {
         font-size: 1em;
         align-items: center;
     }
-.wrapper {
-    display: flex;
-    position: relative;
-    /* flex-direction: column; */
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 5%;
-    /* justify-items: center; */
+
+    .wrapper {
+        display: flex;
+        position: relative;
+        /* flex-direction: column; */
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 5%;
+        /* justify-items: center; */
 
 
-}
+    }
+
     .rum {
         display: flex;
-        /* flex-direction: row; */
-        /* width: 100%; */
-        /* margin-top: 10%; */
-        /* width: 100%; */
-        /* min-height: 100vh; */
-        /* max-width: 100%; */
-        /* max-width: 700px; */
-        /* justify-content: center; */
+
     }
 
     .bildRum {

@@ -41,16 +41,20 @@ sidan skrollas upp till toppen.
 <body>
     <section>
         <header id="heading">
-            <div id="icon">
+            <div id="icon" class="icon">
                 <a href="index.htm"><img src="bilder/cabin.png" alt="Icon of a bed"></a>
             </div>
-            <nav id="meny">
+            <nav>
+                <div class="navBar" class="synlig" id="navBar">
                 <a href="index.htm">Startsida</a>
                 <a href="hotellrum.htm">Våra rum</a>
                 <a href="kontakt.htm">Kontakta oss</a>
+                </div>
+                <div id="menyIkon">
+                <img id="menyKnapp" class="menyKnapp" class="hidden" src="bilder/Menyknapp2.png" alt="">
+                </div>
             </nav>
         </header>
-       
     </section>
     <main>
     <section class="hero">
@@ -93,6 +97,7 @@ sidan skrollas upp till toppen.
     <footer>
         <p>© 2022 Helagsdalens Fjällhotel</p>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>

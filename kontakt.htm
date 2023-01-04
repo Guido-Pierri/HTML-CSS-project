@@ -22,16 +22,23 @@ ii. Kontaktformulär med minst följande fält:
 </head>
 
 <body>
-    <div id="heading">
-        <div id="icon">
-            <a href="index.htm"><img src="bilder/cabin.png" alt="Icon of a bed"></a>
-        </div>
-        <nav id="meny">
-            <a href="index.htm">Startsida</a>
-            <a href="hotellrum.htm">Våra rum</a>
-            <a href="kontakt.htm">Kontakta oss</a>
-        </nav>
-    </div>
+    <section>
+        <header id="heading">
+            <div id="icon" class="icon">
+                <a href="index.htm"><img src="bilder/cabin.png" alt="Icon of a bed"></a>
+            </div>
+            <nav>
+                <div class="navBar" class="synlig" id="navBar">
+                    <a href="index.htm">Startsida</a>
+                    <a href="hotellrum.htm">Våra rum</a>
+                    <a href="kontakt.htm">Kontakta oss</a>
+                </div>
+                <div id="menyIkon">
+                    <img id="menyKnapp" class="menyKnapp" class="hidden" src="bilder/Menyknapp2.png" alt="">
+                </div>
+            </nav>
+        </header>
+    </section>
     <main>
         <section class="hero">
             <video src="bilder/Mountains - 7418.mp4" autoplay loop>
@@ -88,6 +95,7 @@ ii. Kontaktformulär med minst följande fält:
     <footer>
         <h4>© 2022 Helagsdalens Fjällhotel</h4>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
