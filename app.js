@@ -1,7 +1,15 @@
+// submitButtonEl.addEventListener("click", function (event) {
+//     event.preventDefault()
+// });
 const knappMenyEl = document.getElementById("menyKnapp");
-const menyEl = document.getElementById("navBar")
+const menyEl = document.getElementById("navBar");
 
-let mybutton = document.getElementById("topBtn");
+const mybutton = document.getElementById("topBtn");
+const formEl = document.getElementById("info");
+const submitButtonEl = document.getElementById("submitButton");
+const meddelandeEl = document.getElementById("meddelande");
+
+//document.getElementById("submitButton").addEventListener("click",)
 
 function visaMeny() {
 
@@ -21,5 +29,13 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function formMessage() {
+    formEl.style.display = "none";
+    meddelandeEl.style.display = "flex";
+}
+
 knappMenyEl.addEventListener('click', visaMeny);
 mybutton.addEventListener('click', topFunction);
+submitButtonEl.addEventListener('click', formMessage);
+submitButtonEl.addEventListener("click", function (event) { event.preventDefault()});

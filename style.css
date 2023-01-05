@@ -5,7 +5,7 @@
     padding: 0;
     font-family: 'Josefin Sans',
         sans-serif, Arial, Helvetica;
-    color: #1b1b1b;
+    color: #dfdfdf;
     /* background-color: #131B42; */
 }
 
@@ -19,26 +19,26 @@ body {
 
 h1 {
     font-size: 3em;
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 h2 {
     font-size: 1.5em;
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 h3 {
     font-size: 1.3em;
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 h4 {
     font-size: 1.1em;
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 p {
-    color: #E06A3F;
+    /* color: #E06A3F; */
     font-size: 1em;
     text-align: justify;
 }
@@ -102,10 +102,15 @@ nav {
     background-color: #003D31;
     width: 100%;
     height: 60px;
+
+}
+
+.navBar :hover {
+    color: #E06A3F;
 }
 
 nav a {
-    color: #E06A3F;
+    /* color: #E06A3F; */
     font-size: 1.5em;
     /* font-weight: bold; */
     padding: 10px;
@@ -140,7 +145,7 @@ nav a {
 }
 
 #underrubrik {
-    color: #E06A3F;
+    /* color: #E06A3F; */
     display: flex;
     justify-content: center;
 
@@ -165,7 +170,7 @@ nav a {
 #container {
     display: flex;
     background-color: #003D31;
-    color: #E06A3F;
+    /* color: #E06A3F; */
     justify-content: center;
     width: 100%;
     height: 60px;
@@ -173,7 +178,7 @@ nav a {
 
 #container h2 {
     display: flex;
-    color: #E06A3F;
+    /* color: #E06A3F; */
     /* font-size: 3em; */
 }
 
@@ -197,7 +202,7 @@ nav a {
 #rum h2 {
     position: absolute;
     text-align: center;
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 .bild {
@@ -230,7 +235,7 @@ footer {
 }
 
 footer h4 {
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 main {
@@ -270,27 +275,25 @@ main {
 }
 
 
+.titelStartsida {
+    /* color: #e6e6e6; */
+    /* color: #E06A3F; */
+    position: absolute;
+    top: 13%;
+    align-content: center;
+    font-size: 4em;
+}
 
 .titel {
-    color: #e6e6e6;
-    color: #E06A3F;
     position: absolute;
-    top: 5%;
+    top: 13%;
     align-content: center;
     font-size: 4em;
 }
 
-.titelStartsida {
-    color: #e6e6e6;
-    color: #E06A3F;
-    position: absolute;
-    top: 10%;
-    align-content: center;
-    font-size: 4em;
-}
 
 .titel2 {
-    color: #E06A3F;
+    /* color: #E06A3F; */
     /* position: absolute; */
     font-size: 1.5em;
 }
@@ -345,12 +348,12 @@ main {
 }
 
 .textContainer p {
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 .textContainer ul li {
     margin-left: 10px;
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 /* .prisContainer {
@@ -360,14 +363,28 @@ main {
 /*
 CSS för kontakt.htm
 */
-.form {
-    /* width: 50%; */
-    background-color: #003D31;
-    color: #E06A3F;
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#meddelande {
+    display: none;
+    /* align-items: top; */
+    font-size: 1em;
+    background-color: #E06A3F;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#meddelande p {
+    color: #003D31;
+    width: 100%;
+
 }
 
 form {
-    color: #E06A3F;
+    /* color: #E06A3F; */
     /* background-color: #ffffff; */
     /* border-color:#1b1b1b; */
     border-radius: 5px;
@@ -379,18 +396,18 @@ form {
 fieldset {
     /* border-color:#1b1b1b; */
     border-width: 0px;
-    color: #E06A3F;
+    /* color: #E06A3F; */
     /* padding: 10px; */
 }
 
 legend {
-    color: #E06A3F;
+    /* color: #E06A3F; */
 
 }
 
 label {
     /* padding: 5px; */
-    color: #E06A3F;
+    /* color: #E06A3F; */
 }
 
 input {
@@ -403,26 +420,44 @@ input {
 input[ type="submit"] {
 
     width: 25%;
-    background-color: #b6b6b6;
+    background-color: #E06A3F;
+    color: #003D31;
     cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
 
 }
 
 select {
-    /* width: 100%; */
+    width: 100%;
     padding: 10px 10px;
-    border-color: #1b1b1b;
+    /* border-color: #941d1d; */
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #E06A3F;
     font-size: 1em;
-    /* color: #1b1b1b; */
+    color: #003D31;
+}
+
+option {
+    color: #003D31;
+
+
+}
+
+option [value=""] {
+    color: #003D31;
+    background-color: #E06A3F;
 }
 
 textarea {
     background-color: #ffffff;
+    color: #1b1b1b;
     border-color: #1b1b1b;
+    border-radius: 5px;
     width: 100%;
+    font-size: 1em;
 }
+
 #topBtn {
     display: none;
     /* Hidden by default */
@@ -438,7 +473,7 @@ textarea {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color:#E06A3F;
+    background-color: #E06A3F;
     /* Set a background color */
     color: #003D31;
     /* Text color */
@@ -488,6 +523,8 @@ textarea {
 
     .info {
         padding: 1%;
+        display: flex;
+        flex-direction: column;
     }
 
     .form {
