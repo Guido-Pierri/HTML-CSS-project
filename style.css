@@ -548,6 +548,7 @@ textarea {
 
     .titelStartsida {
         position: relative;
+        padding-top: 10px;
     }
 
     .content {
