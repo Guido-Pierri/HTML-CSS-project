@@ -7,6 +7,7 @@
         sans-serif, Arial, Helvetica;
     color: #dfdfdf;
 }
+
 body {
     font-size: 100%;
     width: 100%;
@@ -14,92 +15,129 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 h1 {
     font-size: 3em;
 }
+
 h2 {
     font-size: 2em;
 }
+
 h3 {
     font-size: 1.3em;
 }
+
 h4 {
     font-size: 1.1em;
 }
+
 p {
     font-size: 1em;
     text-align: justify;
 }
+
 video {
     width: 100%;
 }
+
 .icon img {
     width: 50px;
     height: 50px;
     padding: 5px;
     background-color: #003D31;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
+
+header {
+    position: relative;
+}
+
 .icon a {
     width: 60px;
     height: 60px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
+
 .meny {
     display: flex;
     justify-content: space-around;
 }
+
 img.hidden {
     display: none;
 }
+
 #menyKnapp {
     display: none;
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    justify-content: flex-end;
 }
+
 .visible {
     display: flex;
 }
+
 #icon div {
     display: flex;
     height: 60px;
     width: 60px;
 }
+
 #icon img {
     width: 50px;
     height: 50px;
     margin: 5px;
     padding-top: 10px;
 }
+
 #heading {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     height: 60px;
     width: 100%;
     align-items: center;
     background-color: #003D31;
 }
+
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #003D31;
     width: 100%;
     height: 60px;
 }
+
 .navBar :hover {
     color: #E06A3F;
 }
+
 nav a {
     font-size: 1.5em;
     padding: 10px;
     text-decoration: none;
 }
+
 .navBar {
     display: flex;
+
 }
+
 #heroSection {
     display: flex;
     flex-direction: column;
     align-content: center;
     position: relative;
 }
+
 #heroSection h1 {
     color: #e6e6e6;
     display: flex;
@@ -111,12 +149,14 @@ nav a {
     font-size: 4em;
     overflow: hidden;
 }
+
 #underrubrik {
     display: flex;
     justify-content: center;
     width: 100%;
     font-size: 2em;
 }
+
 #heroSection h2 {
     color: #E06A3F;
     position: absolute;
@@ -127,6 +167,7 @@ nav a {
     width: 100%;
     font-size: 2em;
 }
+
 #container {
     display: flex;
     background-color: #003D31;
@@ -134,12 +175,15 @@ nav a {
     width: 100%;
     height: 60px;
 }
+
 #container h2 {
     display: flex;
 }
+
 #container2 {
     width: 100%S;
 }
+
 .wrapper {
     display: flex;
     position: relative;
@@ -149,23 +193,28 @@ nav a {
     justify-content: space-around;
     margin-top: 5%;
 }
+
 #rum h2 {
     position: absolute;
     text-align: center;
 }
+
 .bild {
     width: 25%;
     position: relative;
 }
+
 .bild2 {
     position: relative;
 }
+
 .rightArrow {
     position: absolute;
     top: 50%;
     right: 30px;
     width: 20px;
 }
+
 footer {
     background-color: #003D31;
     display: flex;
@@ -174,12 +223,14 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #003D31;
 }
+
 .hero {
     position: relative;
     display: flex;
@@ -188,6 +239,7 @@ main {
     background-color: #003D31;
     align-items: center;
 }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -197,42 +249,50 @@ main {
     max-width: 750px;
     padding-top: 7%;
 }
+
 .content h2 {
     display: flex;
     justify-content: center;
 }
+
 .content p {
     font-size: 1.3em;
     justify-content: center;
     text-align: justify;
     margin: 2%;
 }
+
 .titel {
     /* top: 13%; */
     align-content: center;
     font-size: 4em;
 }
+
 .container {
     width: 100%;
     display: flex;
     flex-flow: row;
 }
+
 .rum {
     display: flex;
     flex-direction: column;
     justify-items: center;
     margin-top: 5%;
 }
+
 .rum2 {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .bildRum {
     width: 50%;
     align-self: center;
     border-radius: 5%;
 }
+
 .textContainer {
     flex-direction: column;
     display: flex;
@@ -240,21 +300,26 @@ main {
     text-align: left;
     font-size: 1em;
 }
+
 .textContainer p {
     font-size: 1em;
 }
+
 .textContainer h2 {
     text-align: center;
     font-size: 1.5em;
 }
+
 .textContainer ul li {
     margin-left: 10px;
 }
+
 /*CSS för kontakt.htm*/
 #form {
     display: flex;
     flex-direction: column;
 }
+
 #meddelande {
     display: none;
     flex-direction: column;
@@ -266,6 +331,7 @@ main {
     padding-top: 10%;
     max-width: 750px;
 }
+
 #laddaOmBtn {
     cursor: pointer;
     padding: 10px;
@@ -274,23 +340,28 @@ main {
     color: #003D31;
     font-size: 1em;
 }
+
 #laddaOmBtn:hover {
     background-color: #555;
 }
+
 form {
 
     border-radius: 5px;
     padding-top: 10px;
     font-size: 1.2em;
 }
+
 fieldset {
     border-width: 0px;
 }
+
 input {
     background-color: #ffffff;
     width: 100%;
     font-size: 1em;
 }
+
 input[ type="submit"] {
 
     width: 25%;
@@ -302,9 +373,11 @@ input[ type="submit"] {
     font-size: 1em;
     font-weight: bold;
 }
+
 input[ type="submit"]:hover {
     background-color: #555;
 }
+
 select {
     width: 100%;
     padding: 10px 10px;
@@ -315,14 +388,17 @@ select {
     color: #003D31;
     font-weight: bold;
 }
+
 option {
     color: #003D31;
     font-weight: bold;
 }
+
 option [value=""] {
     color: #003D31;
     background-color: #E06A3F;
 }
+
 textarea {
     background-color: #ffffff;
     color: #1b1b1b;
@@ -331,6 +407,7 @@ textarea {
     width: 100%;
     font-size: 1em;
 }
+
 #topBtn {
     display: none;
     position: fixed;
@@ -346,6 +423,7 @@ textarea {
     font-size: 2em;
     font-weight: bold;
 }
+
 #topBtn:hover {
     background-color: #555;
 }
@@ -354,32 +432,43 @@ textarea {
 @media screen and (max-width: 750px) {
     .navBar {
         display: none;
-        font-size: 60%;
+        font-size: 70%;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        /* transform: translate(-50%, 0%); */
     }
+
     #menyKnapp {
         display: flex;
         width: 50px;
         align-items: center;
         padding-right: 5px;
     }
+
     nav {
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
+
     .hidden {
         display: none;
     }
+
     .visible {
         display: flex;
     }
+
     .info {
         padding: 1%;
         display: flex;
         flex-direction: column;
     }
+
     .form {
         padding: 1%;
     }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -390,6 +479,7 @@ textarea {
         width: 100%;
         overflow: hidden;
     }
+
     .hero h1 {
         font-size: 2em;
     }
@@ -397,10 +487,12 @@ textarea {
     .titelStartsida {
         position: relative;
     }
+
     .content {
         width: 100%;
 
     }
+
     .container {
         width: 100%;
         display: flex;
@@ -409,6 +501,7 @@ textarea {
         font-size: 1em;
         align-items: center;
     }
+
     .wrapper {
         display: flex;
         position: relative;
@@ -421,14 +514,17 @@ textarea {
 
 
     }
+
     .rum {
         display: flex;
 
     }
+
     .bildRum {
         width: 100%;
         align-self: center;
     }
+
     #topBtn {
         display: none;
         position: fixed;
@@ -443,6 +539,7 @@ textarea {
         border-radius: 10px;
         font-size: 18px;
     }
+
     #topBtn:hover {
         background-color: #555;
     }
