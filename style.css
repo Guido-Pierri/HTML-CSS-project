@@ -23,7 +23,7 @@ h1 {
 }
 
 h2 {
-    font-size: 1.5em;
+    font-size: 2em;
     /* color: #E06A3F; */
 }
 
@@ -71,7 +71,7 @@ img.hidden {
     display: none;
 }
 
-.menyKnapp {
+#menyKnapp {
     display: none;
 }
 
@@ -262,31 +262,31 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #003D31;
-    text-align: left;
-    /* align-items: center; */
+    text-align: center;
     width: 100%;
     max-width: 750px;
-    /* align-items: center; */
-    /* align-content: center; */
+    padding-top: 7%;
 }
 
 .content h2 {
     display: flex;
+    justify-content: center;
 }
 
-
-.titelStartsida {
-    /* color: #e6e6e6; */
-    /* color: #E06A3F; */
-    position: absolute;
-    top: 13%;
-    align-content: center;
-    font-size: 4em;
+.content h3 {
+    justify-content: center;
+    text-align: justify;
+    margin: 2%;
 }
 
-.titel {
-    position: absolute;
-    top: 13%;
+/* .titelStartsida {
+position: absolute;
+align-content: center;
+/* font-size: 4em; 
+}*/
+
+*/ .titel {
+    /* top: 13%; */
     align-content: center;
     font-size: 4em;
 }
@@ -295,7 +295,6 @@ main {
 .titel2 {
     /* color: #E06A3F; */
     /* position: absolute; */
-    font-size: 1.5em;
 }
 
 .container {
@@ -347,8 +346,8 @@ main {
 
 }
 
-.textContainer p {
-    /* color: #E06A3F; */
+.textContainer h2 {
+    text-align: center;
 }
 
 .textContainer ul li {
@@ -356,10 +355,6 @@ main {
     /* color: #E06A3F; */
 }
 
-/* .prisContainer {
-    display: flex;
-    justify-content: center;
-} */
 /*
 CSS för kontakt.htm
 */
@@ -376,6 +371,7 @@ CSS för kontakt.htm
     font-size: 2em;
     border-radius: 10px;
     padding: 10px;
+    padding-top: 10%;
     max-width: 750px;
 }
 
@@ -394,7 +390,7 @@ CSS för kontakt.htm
 }
 
 form {
-    
+
     border-radius: 5px;
     padding-top: 10px;
     font-size: 1.2em;
@@ -431,9 +427,11 @@ input[ type="submit"] {
     border-radius: 5px;
 
 }
+
 input[ type="submit"]:hover {
-background-color: #555;
+    background-color: #555;
 }
+
 select {
     width: 100%;
     padding: 10px 10px;
@@ -508,7 +506,7 @@ textarea {
         font-size: 60%;
     }
 
-    .menyKnapp {
+    #menyKnapp {
         display: flex;
         width: 50px;
         align-items: center;
@@ -539,10 +537,10 @@ textarea {
     }
 
     .hero {
-        position: relative;
         display: flex;
         flex-direction: column;
         background-color: #003D31;
+        padding-top: 5%;
         /* text-align: center; */
         align-items: center;
         width: 100%;
@@ -555,7 +553,6 @@ textarea {
 
     .titelStartsida {
         position: relative;
-        padding-top: 10px;
     }
 
     .content {
@@ -574,6 +571,7 @@ textarea {
     .wrapper {
         display: flex;
         position: relative;
+        justify-content: center;
         /* flex-direction: column; */
         width: 100%;
         justify-content: space-around;
@@ -591,10 +589,39 @@ textarea {
     .bildRum {
         width: 100%;
         align-self: center;
-        /* height: 50%; */
-        /* flex-direction: row; */
-        /* flex-flow: row; */
-        /* justify-items: flex-start; */
-        /* margin: 10px; */
+
     }
+        #topBtn {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Fixed/sticky position */
+            bottom: 15%;
+            /* Place the button at the bottom of the page */
+            right: 30px;
+            /* Place the button 30px from the right */
+            z-index: 99;
+            /* Make sure it does not overlap */
+            border: none;
+            /* Remove borders */
+            outline: none;
+            /* Remove outline */
+            background-color: #E06A3F;
+            /* Set a background color */
+            color: #003D31;
+            /* Text color */
+            cursor: pointer;
+            /* Add a mouse pointer on hover */
+            padding: 15px;
+            /* Some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+            font-size: 18px;
+            /* Increase font size */
+        }
+    
+        #topBtn:hover {
+            background-color: #555;
+            /* Add a dark-grey background on hover */
+        }
 }
