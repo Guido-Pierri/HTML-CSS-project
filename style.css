@@ -47,6 +47,9 @@ video {
     width: 100%;
 }
 
+button {
+    font-weight: bold;
+}
 .icon img {
     /* max-width: 240px;
     max-height: 240px;
