@@ -449,9 +449,8 @@ select {
 option {
     color: #003D31;
     font-weight: bold;
-
-
 }
+
 
 option [value=""] {
     color: #003D31;
@@ -470,37 +469,23 @@ textarea {
 
 #topBtn {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 20px;
-    /* Place the button at the bottom of the page */
     right: 30px;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
+    /* z-index: 99; */
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
     background-color: #E06A3F;
-    /* Set a background color */
     color: #003D31;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 15px;
-    /* Some padding */
     border-radius: 10px;
-    /* Rounded corners */
     font-size: 2em;
-    /* Increase font size */
     font-weight: bold;
 }
 
 #topBtn:hover {
     background-color: #555;
-    /* Add a dark-grey background on hover */
 }
 
 
