@@ -47,9 +47,7 @@ video {
     width: 100%;
 }
 
-button {
-    font-weight: bold;
-}
+
 .icon img {
     /* max-width: 240px;
     max-height: 240px;
@@ -491,8 +489,9 @@ textarea {
     /* Some padding */
     border-radius: 10px;
     /* Rounded corners */
-    font-size: 18px;
+    font-size: 2em;
     /* Increase font size */
+    font-weight: bold;
 }
 
 #topBtn:hover {
