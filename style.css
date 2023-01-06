@@ -235,10 +235,6 @@ footer {
     align-items: center;
 }
 
-footer h4 {
-    /* color: #E06A3F; */
-}
-
 main {
     display: flex;
     flex-direction: column;
@@ -290,12 +286,6 @@ align-content: center;
     /* top: 13%; */
     align-content: center;
     font-size: 4em;
-}
-
-
-.titel2 {
-    /* color: #E06A3F; */
-    /* position: absolute; */
 }
 
 .container {
@@ -399,16 +389,6 @@ form {
 
 fieldset {
     border-width: 0px;
-}
-
-legend {
-    /* color: #E06A3F; */
-
-}
-
-label {
-    /* padding: 5px; */
-    /* color: #E06A3F; */
 }
 
 input {
