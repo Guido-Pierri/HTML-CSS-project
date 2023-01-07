@@ -35,6 +35,7 @@ h4 {
 p {
     font-size: 1em;
     text-align: justify;
+    text-justify: inter-word;
 }
 
 video {
@@ -246,6 +247,7 @@ main {
     font-size: 1.3em;
     justify-content: center;
     text-align: justify;
+    text-justify: inter-word;
     margin: 2%;
 }
 
@@ -526,9 +528,11 @@ textarea {
         font-size: 1em;
         align-items: center;
     }
-.textContainer {
-    padding-top: 5%;
-}
+
+    .textContainer {
+        padding-top: 5%;
+    }
+
     .wrapper {
         display: flex;
         position: relative;
