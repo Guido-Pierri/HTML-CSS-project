@@ -491,7 +491,6 @@ textarea {
         flex-direction: column;
         background-color: #003D31;
         padding-top: 5%;
-        /* text-align: center; */
         align-items: center;
         width: 100%;
         overflow: hidden;
