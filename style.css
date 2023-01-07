@@ -84,18 +84,6 @@ img.hidden {
     display: flex;
 }
 
-#icon div {
-    display: flex;
-    height: 60px;
-    width: 60px;
-}
-
-#icon img {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    padding-top: 10px;
-}
 
 #heading {
     display: flex;
@@ -122,8 +110,8 @@ nav {
 
 nav a {
     font-size: 1.5em;
-    padding: 10px;
     text-decoration: none;
+    padding: 10px;
 }
 
 .navBar {
@@ -428,16 +416,9 @@ textarea {
     background-color: #555;
 }
 
-/* Media Query för skärmar mindre än 750 px bredd */
-@media screen and (max-width: 750px) {
-    .navBar {
-        display: none;
-        font-size: 70%;
-        position: absolute;
-        top: 40%;
-        left: 20%;
-        /* transform: translate(-50%, 0%); */
-    }
+/* Media Query för skärmar mindre än 768 px bredd */
+@media screen and (max-width: 768px) {
+
 
     #menyKnapp {
         display: flex;
@@ -446,9 +427,38 @@ textarea {
         padding-right: 5px;
     }
 
+    #heading {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        height: 60px;
+        width: 100%;
+        background-color: #003D31;
+    }
+
+    .navBar {
+        display: none;
+        font-size: 70%;
+        position: absolute;
+        top: 40%;
+        left: 20%;
+        padding: 0;
+    }
+
+    #heading a {
+        display: flex;
+        flex-direction: row;
+    }
+
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+    }
+
+    nav a {
+        display: flex;
+        padding: 10px;
+        text-align: center;
     }
 
     .hidden {
@@ -482,8 +492,12 @@ textarea {
 
     .hero h1 {
         font-size: 2em;
+        align-content: center;
+        text-align: center;
     }
-
+.titelStartsida h1 {
+    align-self: center;
+}
     .titelStartsida {
         position: relative;
     }
@@ -542,5 +556,12 @@ textarea {
 
     #topBtn:hover {
         background-color: #555;
+    }
+}
+
+@media screen and (max-width: 500) {
+    nav a {
+        padding: 0px;
+        color: #1b1b1b;
     }
 }
