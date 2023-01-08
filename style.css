@@ -435,12 +435,6 @@ nav a {
     font-size: 1.5em;
 }
 
-.titelStartsida h1 {
-    align-self: center;
-}
-
-
-
 .content {
     width: 100%;
 
@@ -531,9 +525,7 @@ nav a {
         text-justify: inter-word;
     }
 
-    video {
-        width: 100%;
-    }
+
 
     .icon img {
         width: 50px;
