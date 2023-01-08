@@ -15,12 +15,14 @@ body {
     display: flex;
     flex-direction: column;
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #003D31;
 }
+
 footer {
     background-color: #003D31;
     display: flex;
@@ -29,6 +31,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 h1 {
     font-size: 3em;
 }
@@ -73,13 +76,8 @@ video {
     left: 0%;
 }
 
-.meny {
-    display: flex;
-    justify-content: space-around;
-}
-
 #menyKnapp {
-    display: none;
+    /* display: none; */
     position: absolute;
     right: 0%;
     top: 35%;
@@ -106,9 +104,6 @@ nav {
     height: 60px;
 }
 
-.navBar :hover {
-    color: #E06A3F;
-}
 
 nav a {
     font-size: 1.5em;
@@ -116,10 +111,27 @@ nav a {
     padding: 10px;
 }
 
+.navBar ul {
+    display: flex;
+    /* width: 100%; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar li {
+    display: inline;
+}
+
 .navBar {
     display: flex;
-
+    justify-content: center;
 }
+
+.navBar :hover {
+    color: #E06A3F;
+}
+
 #container {
     display: flex;
     background-color: #003D31;
@@ -149,10 +161,7 @@ nav a {
     width: 25%;
 }
 
-
-
 .hero {
-    position: relative;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -184,7 +193,6 @@ nav a {
 }
 
 .titel {
-    /* top: 13%; */
     align-content: center;
     font-size: 4em;
 }
@@ -349,148 +357,482 @@ textarea {
     background-color: #555;
 }
 
-/* Media Query för skärmar mindre än 768 px bredd */
-@media screen and (max-width: 768px) {
 
+#menyKnapp {
+    /* display: flex; */
+    width: 50px;
+    align-items: center;
+    /* padding-right: 5px; */
+}
+
+#heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 60px;
+    width: 100%;
+    background-color: #003D31;
+}
+
+.navBar {
+    display: none;
+    font-size: 70%;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    padding: 0;
+}
+
+#heading a {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.visible {
+    display: flex;
+}
+
+.info {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info p {
+    text-align: center;
+}
+
+.form {
+    padding: 1%;
+}
+
+
+
+.hero h1 {
+    font-size: 2em;
+    align-content: center;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.content h2 {
+    font-size: 1.5em;
+}
+
+.titelStartsida h1 {
+    align-self: center;
+}
+
+.titelStartsida {
+    position: relative;
+}
+
+.content {
+    width: 100%;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    font-size: 1em;
+    align-items: center;
+}
+
+.textContainer {
+    padding-top: 5%;
+}
+
+.wrapper {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    /* flex-direction: column; */
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5%;
+    /* justify-items: center; */
+
+
+}
+
+.rum {
+    display: flex;
+
+}
+
+.bildRum {
+    width: 100%;
+    align-self: center;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 90%;
+    right: 30px;
+    border: none;
+    outline: none;
+    background-color: #E06A3F;
+    color: #003D31;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+#topBtn:hover {
+    background-color: #555;
+}
+
+@media only screen and (min-width: 768px) {
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    section nav {
+        display: flex;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .hero h1 {
+        display: flex;
+        font-size: 3em;
+        align-content: center;
+        text-align: center;
+        padding-top: 5%;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.3em;
+    }
+
+    h4 {
+        font-size: 1.1em;
+    }
+
+    p {
+        font-size: 1em;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    .icon img {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background-color: #003D31;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .icon a {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .navBar {
+        position: initial;
+        font-size: 100%;
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hidden img {
+        display: none;
+    }
 
     #menyKnapp {
-        display: flex;
-        width: 50px;
-        align-items: center;
-        /* padding-right: 5px; */
+        display: none;
+        position: absolute;
+        right: 0%;
+        top: 35%;
+        padding-right: 10px;
+    }
+
+    #menyKnapp img {
+        display: none;
     }
 
     #heading {
         display: flex;
-        justify-content: center;
         flex-direction: row;
         height: 60px;
         width: 100%;
+        align-items: center;
         background-color: #003D31;
     }
 
-    .navBar {
-        display: none;
-        font-size: 70%;
-        position: absolute;
-        top: 40%;
-        left: 20%;
-        padding: 0;
-    }
-
     #heading a {
-        display: flex;
-        flex-direction: row;
+        justify-content: center;
     }
 
-    nav {
+    /* nav {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #003D31;
+        width: 100%;
+        height: 60px;
+    } */
+
+    .navBar :hover {
+        color: #E06A3F;
+    }
+
+    nav a {
+        font-size: 1.5em;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .navBar {
+        display: flex;
+
+    }
+
+    #container {
+        display: flex;
+        background-color: #003D31;
+        justify-content: center;
+        width: 100%;
+        height: 60px;
+    }
+
+    #container h2 {
+        display: flex;
+    }
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        max-width: 750px;
+        justify-content: space-around;
+        margin-top: 5%;
+    }
+
+    #rum h2 {
+        position: absolute;
+        text-align: center;
+    }
+
+    .bild {
+        width: 25%;
+    }
+
+
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        background-color: #003D31;
+        text-align: center;
+        width: 100%;
+        max-width: 750px;
+        padding-top: 7%;
+    }
+
+    .content h2 {
         display: flex;
         justify-content: center;
     }
 
-    nav a {
-        display: flex;
-        padding: 10px;
-        text-align: center;
-        font-size: 1.4em;
+    .content p {
+        font-size: 1.3em;
+        justify-content: center;
+        text-align: justify;
+        text-justify: inter-word;
+        margin: 2%;
     }
 
-    .hidden {
-        display: none;
-    }
-
-    .visible {
-        display: flex;
-    }
-
-    .info {
-        padding: 1%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .info p {
-        text-align: center;
-    }
-
-    .form {
-        padding: 1%;
-    }
-
-    .hero {
-        display: flex;
-        flex-direction: column;
-        background-color: #003D31;
-        padding-top: 5%;
-        align-items: center;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .hero h1 {
-        font-size: 2em;
+    .titel {
+        /* top: 13%; */
         align-content: center;
-        text-align: center;
-    }
-
-    .content h2 {
-        font-size: 1.5em;
-    }
-
-    .titelStartsida h1 {
-        align-self: center;
-    }
-
-    .titelStartsida {
-        position: relative;
-    }
-
-    .content {
-        width: 100%;
-
+        font-size: 4em;
     }
 
     .container {
         width: 100%;
         display: flex;
-        flex-wrap: wrap;
-        flex-flow: column;
-        font-size: 1em;
-        align-items: center;
-    }
-
-    .textContainer {
-        padding-top: 5%;
-    }
-
-    .wrapper {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        /* flex-direction: column; */
-        width: 100%;
-        justify-content: space-around;
-        margin-top: 5%;
-        /* justify-items: center; */
-
-
+        flex-flow: row;
     }
 
     .rum {
         display: flex;
+        flex-direction: column;
+        justify-items: center;
+        margin-top: 5%;
+    }
 
+    .rum2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
     }
 
     .bildRum {
-        width: 100%;
+        width: 50%;
         align-self: center;
+        border-radius: 5%;
+    }
+
+    .textContainer {
+        flex-direction: column;
+        display: flex;
+        margin: 2%;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    .textContainer p {
+        font-size: 1em;
+    }
+
+    .textContainer h2 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    .textContainer ul li {
+        margin-left: 10px;
+    }
+
+    /*CSS för kontakt.htm*/
+    #form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #meddelande {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        /* align-items: top; */
+        font-size: 2em;
+        border-radius: 10px;
+        padding: 10px;
+        padding-top: 10%;
+        max-width: 750px;
+    }
+
+    #laddaOmBtn {
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #E06A3F;
+        color: #003D31;
+        font-size: 1em;
+    }
+
+    #laddaOmBtn:hover {
+        background-color: #555;
+    }
+
+    form {
+
+        border-radius: 5px;
+        padding-top: 10px;
+        font-size: 1.2em;
+    }
+
+    fieldset {
+        border-width: 0px;
+    }
+
+    input {
+        background-color: #ffffff;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    input[ type="submit"] {
+
+        width: 25%;
+        background-color: #E06A3F;
+        color: #003D31;
+        cursor: pointer;
+        width: 100%;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    input[ type="submit"]:hover {
+        background-color: #555;
+    }
+
+    select {
+        width: 100%;
+        padding: 10px 10px;
+        /* border-color: #941d1d; */
+        border-radius: 4px;
+        background-color: #E06A3F;
+        font-size: 1em;
+        color: #003D31;
+        font-weight: bold;
+    }
+
+    option {
+        color: #003D31;
+        font-weight: bold;
+    }
+
+    option [value=""] {
+        color: #003D31;
+        background-color: #E06A3F;
+    }
+
+    textarea {
+        background-color: #ffffff;
+        color: #1b1b1b;
+        border-color: #1b1b1b;
+        border-radius: 5px;
+        width: 100%;
+        font-size: 1em;
     }
 
     #topBtn {
         display: none;
         position: fixed;
-        bottom: 90%;
+        bottom: 20px;
         right: 30px;
         border: none;
         outline: none;
@@ -499,7 +841,8 @@ textarea {
         cursor: pointer;
         padding: 15px;
         border-radius: 10px;
-        font-size: 18px;
+        font-size: 2em;
+        font-weight: bold;
     }
 
     #topBtn:hover {
