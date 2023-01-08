@@ -1,13 +1,6 @@
-
 const knappMenyEl = document.getElementById("menyKnapp");
 const menyEl = document.getElementById("navBar");
-
 const mybutton = document.getElementById("topBtn");
-
-
-
-
-//document.getElementById("submitButton").addEventListener("click",)
 
 function visaMeny() {
 
@@ -23,12 +16,11 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
+
 function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
 
 knappMenyEl.addEventListener('click', visaMeny);
 mybutton.addEventListener('click', topFunction);
