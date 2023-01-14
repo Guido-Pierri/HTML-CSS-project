@@ -161,7 +161,7 @@ nav a {
 .bild {
     width: 100%;
     /* border-radius: 10%; */
-    padding: 1%;
+    padding: 5%;
 }
 
 .hero {
@@ -633,7 +633,7 @@ nav a {
     .bild {
         width: 31%;
         border-radius: 10%;
-        /* padding: 10px; */
+        padding: 1%;
     }
 
     #rum h2 {
