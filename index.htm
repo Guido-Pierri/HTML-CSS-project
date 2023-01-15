@@ -9,6 +9,7 @@
     <title>Helagsdalens Fjällhotel</title>
     <link rel="icon" type="image/x-icon" href="bilder/index/cabin.png">
 </head>
+
 <body>
     <section>
 
@@ -17,7 +18,7 @@
                 <a href="index.htm"><img src="bilder/index/cabin.png" alt="fjällhotellets ikon"></a>
             </div>
             <div class="navBar" id="navBar">
-                <ul>                   
+                <ul>
                     <li><a href="index.htm">Startsida</a></li>
                     <li><a href="hotellrum.htm">Våra rum</a></li>
                     <li><a href="kontakt.htm">Kontakta oss</a></li>
@@ -34,11 +35,16 @@
             <br>
             <h1 class="titelStartsida">Helagsdalens Fjällhotel</h1>
             <br>
-            <img class="hero" src="bilder/index/pexels-luizamaria-scurtu-1977342(1)_smallest2.jpg" alt="Fjällhotellet">
+            <picture class="hero">
+                <source  srcset="bilder/index/pexels-luizamaria-scurtu-1977342(1)_smallest_768px.jpg" media="(max-width: 768px)">
+                <source srcset="bilder/index/pexels-luizamaria-scurtu-1977342(1)_smallest_1500px.jpg" media="(max-width: 1500px)">
+                <img src="bilder/index/pexels-luizamaria-scurtu-1977342(1)_smallest.jpg" alt="Fjällhotellet" >
+            </picture>
+
 
         </section>
         <section class="content">
-            
+
             <h2>Ett hotell för hela familjen, mitt i fjällvärlden</h2><br>
             <p>Välkommen till härliga Helagsdalens Fjällhotel. Som om inte det vore nog ligger hotellet dessutom bara
                 ett

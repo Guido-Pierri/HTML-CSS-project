@@ -171,7 +171,12 @@ nav a {
     background-color: #003D31;
     align-items: center;
 }
-
+.hero picture img{
+    width: 100%;
+}
+.hero source {
+    width: 100%;
+}
 .content {
     display: flex;
     flex-direction: column;
