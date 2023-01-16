@@ -1,3 +1,4 @@
+"use strict";
 const knappMenyEl = document.getElementById("menyKnapp");
 const menyEl = document.getElementById("navBar");
 const mybutton = document.getElementById("topBtn");

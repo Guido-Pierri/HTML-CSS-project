@@ -1,3 +1,4 @@
+"use strict";
 const formEl = document.getElementById("info");
 const heroEl = document.getElementById("hero")
 const mainEl = document.getElementById("main")
